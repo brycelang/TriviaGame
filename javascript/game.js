@@ -1,8 +1,4 @@
 $(document).ready(function() { 
-var question = document.getElementById('question');
-var answers = document.getElementById('answers');
-var submitButton = document.getElementById('#submit');
-
 function init(){}
 
 function conclude(){}
