@@ -6,12 +6,13 @@
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Links to outside libs -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/game.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
 
         <!-- Jumbotron -->
@@ -30,59 +31,42 @@
                                 </div>
                               </div>
                
-                                <br>
-                                <br>
-                                <br>
-                                
                                 <div class="container">
                                   <div class="col-sm-12">
-                                    <h6>Please a key to begin!</h6>
+                                    <h6>Answer Below</h6>
                                   </div>
                                 </div>
                               </div>
                               <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <br>
-                              <!-- this will displau the word -->
-                              <div class="container">
-                                <div class="col-md-12">
-                        
-                               
-                                </div>
-                              </div>
-                              <div class="mx-auto jumbotron mainDisplay">
-                                    <div class="row">
-                                      <div class="col-md-3 mr-auto mobileBoard">
-                                          <!-- Displays Wins -->
-                                        <p class="text-left ">Time Left:
-                                         <span id="checkScore">0</span>
-                                        </p>
-                                     </div>
-                                     <div class="col-md-3 ml-auto">
-                                     <h4>Correct Answers</h4>
-                                     <p><span id="currentWord"></span></p>
-               
-                                     </div>
-                                     <div class="col-md-3 ml-auto">
-                                            <h4>Incorrect Answers</h4>
-                                            <p><span id="currentWord"></span></p>
+
                    
-                                     </div>
-                                     <p><span id="displayGuess"></span></p>
-                                      <div class="col-md-3 ml-auto">
-                                        <p class="text-right">Remaining Attempts: 
-                                                <span id="checkAttempt">0</span>
-        
-                                        </p>
-                                      </div>
-                                    </div>
-                            </div>
-                          </div>
+                              <div class="container" class="float-left">
+                                <div class="row">
+                              <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+<div class="col-4">
+                                  <li><div class="question">test</div></li>
+                                  <input id="answer" type="radio" name="group1" value="wrong"> test<br>
+                                  <input id="answer" type="radio" name="group1" value="wrong"> test<br>
+                                  <input id="answer" type="radio" name="group1" value="correct"> test<hr>
+                                </div>
+                                  <div class="col-4">
+                                  <li><div class="question">test</div></li>
+                                  <input id="answer" type="radio" name="group2" value="wrong">test<br>
+                                  <input id="answer" type="radio" name="group2" value="wrong">test<br>
+                                  <input id="answer" type="radio" name="group2" value="correct">test<hr>
+                                </div>
+                                  <div class="col-4">
+                                  <li><div class="question">test</div></li>
+                                  <input id="answer" type="radio" name="group3" value="wrong">Josh<br>
+                                  <input id="answer" type="radio" name="group3" value="wrong"> test<br>
+                                  <input id="answer" type="radio" name="group3" value="correct" >test<hr>
+                                </div>
+                                 
+                                  <button class="submit" id="submit" type="submit">Submit</button>
+                                </div>
+                                </div>
+         
                         </div>
 </body>
+
 </html>
