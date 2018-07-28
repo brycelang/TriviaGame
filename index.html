@@ -6,10 +6,12 @@
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Links to outside libs -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/timeto.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="javascript/game.js"></script>
+    <script src="javascript/timeto.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
@@ -38,12 +40,13 @@
                                 </div>
                               </div>
                               
-                              <h5 class="text-center" id="timer">Time Remaining: 1 Minute</h5>
+                              <h5 class="text-center" id="countdown">Time Remaining: 1 Minute</h5>
                    
                               <div class="jumbotron" class="">
                                 <div class="container">
                               <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
 <div class="row-4">
+    <h2 id="cdown"></h2>
     <h3>Your total score is: <span id="numberRight"></span> </h3>
                                   <div class="question">What is the Latin plural form of the word cactus?</div>
                                   <input id="answer" type="radio" name="group1" value="correct"> Cacti<br>
